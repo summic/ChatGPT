@@ -54,6 +54,8 @@ export class ChatGPTApi implements LLMApi {
       content: v.content,
     }));
 
+    console.log("【Msg】:", messages);
+
     const modelConfig = {
       ...useAppConfig.getState().modelConfig,
       ...useChatStore.getState().currentSession().mask.modelConfig,
@@ -72,7 +74,8 @@ export class ChatGPTApi implements LLMApi {
       top_p: modelConfig.top_p,
     };
 
-    console.log("[Request] openai payload: ", requestPayload);
+    console.log("============================================");
+    console.log("[Messages] Here: ", messages);
 
     const shouldStream = !!options.config.stream;
     const controller = new AbortController();
