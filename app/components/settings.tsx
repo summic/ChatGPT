@@ -531,9 +531,6 @@ export function Settings() {
     updateStore.getLatestVersion(force).then(() => {
       setCheckingUpdate(false);
     });
-
-    console.log("[Update] local version ", updateStore.version);
-    console.log("[Update] remote version ", updateStore.remoteVersion);
   }
 
   const usage = {

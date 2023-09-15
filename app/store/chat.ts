@@ -296,7 +296,6 @@ export const useChatStore = createPersistStore(
         const modelConfig = session.mask.modelConfig;
 
         const userContent = fillTemplateWith(content, modelConfig);
-        console.log("[User Input] after template: ", userContent);
 
         const userMessage: ChatMessage = createMessage({
           role: "user",

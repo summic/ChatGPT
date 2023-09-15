@@ -80,10 +80,7 @@ export const useUpdateStore = createPersistStore(
         set(() => ({
           remoteVersion: remoteId,
         }));
-        console.log("[Got Upstream] ", remoteId);
-      } catch (error) {
-        console.error("[Fetch Upstream Commit Id]", error);
-      }
+      } catch (error) {}
     },
 
     async updateUsage(force = false) {

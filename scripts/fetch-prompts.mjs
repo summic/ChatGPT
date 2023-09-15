@@ -21,7 +21,6 @@ const timeoutPromise = (timeout) => {
 };
 
 async function fetchCN() {
-  console.log("[Fetch] fetching cn prompts...");
   try {
     const response = await Promise.race([fetch(CN_URL), timeoutPromise(5000)]);
     const raw = await response.json();
@@ -40,7 +39,6 @@ async function fetchCN() {
 }
 
 async function fetchEN() {
-  console.log("[Fetch] fetching en prompts...");
   try {
     // const raw = await (await fetch(EN_URL)).text();
     const response = await Promise.race([fetch(EN_URL), timeoutPromise(5000)]);
