@@ -155,6 +155,12 @@ const sk: PartialLocaleType = {
       Title: "Veľkosť písma",
       SubTitle: "Nastaviť veľkosť písma obsahu chatu",
     },
+    FontFamily: {
+      Title: "Chatové Písmo",
+      SubTitle:
+        "Písmo obsahu chatu, ponechajte prázdne pre použitie globálneho predvoleného písma",
+      Placeholder: "Názov Písma",
+    },
     InjectSystemPrompts: {
       Title: "Vložiť systémové výzvy",
       SubTitle: "Vložiť globálnu systémovú výzvu pre každú požiadavku",
@@ -315,6 +321,23 @@ const sk: PartialLocaleType = {
         ApiVerion: {
           Title: "Verzia API Azure",
           SubTitle: "Skontrolujte svoju verziu API v Azure konzole",
+        },
+      },
+      Anthropic: {
+        ApiKey: {
+          Title: "API kľúč Anthropic",
+          SubTitle: "Skontrolujte svoj API kľúč v Anthropic konzole",
+          Placeholder: "API kľúč Anthropic",
+        },
+
+        Endpoint: {
+          Title: "Adresa koncového bodu",
+          SubTitle: "Príklad:",
+        },
+
+        ApiVerion: {
+          Title: "Verzia API (claude verzia API)",
+          SubTitle: "Vyberte špecifickú verziu časti",
         },
       },
       CustomModel: {

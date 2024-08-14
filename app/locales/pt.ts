@@ -153,6 +153,12 @@ const pt: PartialLocaleType = {
       Title: "Tamanho da Fonte",
       SubTitle: "Ajustar o tamanho da fonte do conteúdo do chat",
     },
+    FontFamily: {
+      Title: "Fonte do Chat",
+      SubTitle:
+        "Fonte do conteúdo do chat, deixe vazio para aplicar a fonte padrão global",
+      Placeholder: "Nome da Fonte",
+    },
     InjectSystemPrompts: {
       Title: "Inserir Prompts de Sistema",
       SubTitle: "Inserir um prompt de sistema global para cada requisição",
@@ -314,6 +320,23 @@ const pt: PartialLocaleType = {
         ApiVerion: {
           Title: "Versão API Azure",
           SubTitle: "Verifique sua versão API do console Azure",
+        },
+      },
+      Anthropic: {
+        ApiKey: {
+          Title: "Chave API Anthropic",
+          SubTitle: "Verifique sua chave API do console Anthropic",
+          Placeholder: "Chave API Anthropic",
+        },
+
+        Endpoint: {
+          Title: "Endpoint Address",
+          SubTitle: "Exemplo: ",
+        },
+
+        ApiVerion: {
+          Title: "Versão API (Versão api claude)",
+          SubTitle: "Verifique sua versão API do console Anthropic",
         },
       },
       CustomModel: {
